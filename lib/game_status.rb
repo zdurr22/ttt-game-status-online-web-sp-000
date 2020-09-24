@@ -4,6 +4,7 @@ def position_taken?(board, index)
 end
 
 # Define your WIN_COMBINATIONS constant
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
 WIN_COMBINATIONS = [
   [0,1,2],
   [3,4,5],
@@ -15,7 +16,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 def won?(board)
-  for each win_combination in WIN_COMBINATIONS
+  WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
     win_index_3 = win_combination[2]
