@@ -60,9 +60,9 @@ def winner(board)
     return nil
   else
     if board[index[0]] == "X"
-      puts "X"
+      return "X"
     else
-      puts "O"
+      return "O"
     end
   end
 end
